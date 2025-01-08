@@ -27,3 +27,56 @@ if (ismlar.includes(ism)) {
 } else {
   alert(`Afsuski ${ism}mi topilmadi.😔`);
 }
+
+// 3
+const ismlar1 = ["Alisher", "Nurmuhammad", "Hayrulla"];
+let i = 0;
+while (i < ismlar1.length) {
+  let result = ismlar1[i] + "bek";
+  console.log(result);
+  i++;
+}
+
+// 4
+
+const viloyatNomi = prompt("Iltmos viloyat nomini yozing!");
+
+switch (viloyatNomi) {
+  case "Farg'ona":
+    alert("Farg'ona viloyatida 2 mln aholi bor.");
+    break;
+  case "Andijon":
+    alert("Anidijon viloyatida 2.5 mln aholi bor.");
+    break;
+  case "Namangan":
+    alert("Namangan viloyatida 2.5 mln aholi bor.");
+    break;
+  default:
+    alert(
+      `Afsuski ${viloyatNomi} viloyati topilmadi. Keyinchalik qo'shlishi mumkin!`
+    );
+}
+
+// 5
+
+const belgilar = prompt(" Iltmos text yozing!");
+
+let meyor = 20;
+
+if (belgilar.length > meyor) {
+  alert(
+    `Siz eng ko'pi bilan ${meyor}ta belgi yozshinggiz mumkin, lekin siz ${
+      belgilar.length
+    } ta belgi yozgansiz. Bu meyotidan ${belgilar.length - meyor} ta ko'p.`
+  );
+} else {
+  alert(
+    `Siz eng ko'pi bilan ${meyor}ta belgi yozshinggiz mumkin edi lekin siz ${
+      belgilar.length
+    } ta belgi yozgansiz. Sizda yana  ${
+      meyor - belgilar.length
+    }ta yozish imkoni bor.`
+  );
+}
+
+

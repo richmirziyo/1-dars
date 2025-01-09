@@ -137,3 +137,120 @@ splitWords.forEach((item) => {
 
   newWords += " " + boshi + davomi;
 });
+
+// 6
+const numbers = [-1, 87, 4, 3.1, -5.5, Infinity, 0, 1, 2, 0.9];
+let naturalNumber = 0;
+numbers.forEach((num) => {
+  if (num >= 0.0 && Math.floor(num) === num && num !== Infinity && num !== 0) {
+    naturalNumber += num;
+  }
+});
+
+// 7
+
+const words1 = "Qalesiz yaxshimisiz ? Yaxshimi ishlar ?";
+
+let splitWords1 = words1.split("");
+
+let counter = 0;
+splitWords1.forEach((word) => {
+  if (word == "a" || word == "A") {
+    counter++;
+  }
+});
+
+console.log(`So'raliyotgan harf: ${counter} marta ishtirok etgan.`);
+
+// 8
+
+const types = [21.1, "Roziya", "array", ["I am array"], null, true, 214];
+
+const newTypes = [];
+
+types.forEach((type) => {
+  newTypes.push(typeof type);
+});
+
+// 9
+const word1 = "Uzbekistan";
+word.lastIndexOf(word1.slice(-1)) + 1;
+
+// 10
+
+const number = [1, 2, 3, 4, 5];
+
+let result1 = [];
+
+number.forEach((num, i) => {
+  result1.push(num + i);
+});
+
+// 11
+
+let counter1 = 0;
+for (let i = 1; i <= 10; i++) {
+  counter += i;
+}
+
+// 12
+
+let number1 = 9;
+
+for (let i = 1; i <= 10; i++) {
+  let reusult = number1 * i + 1;
+  console.log(reusult);
+}
+
+// 13
+
+let numbers1 = [1, 2, 3, 4, 5];
+let results = [];
+
+const reverseFunc = (arr) => {
+  arr.forEach((num) => {
+    results.push(num * -1);
+  });
+};
+reverseFunc(numbers1);
+console.log(results);
+
+// 14
+
+const results1 = [];
+
+const fizzBuzzFunc = function (number) {
+  for (let i = 1; i <= number; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      results1.push("FizzBuzz");
+    } else if (i % 5 == 0) {
+      results1.push("Buzz");
+    } else if (i % 3 == 0) {
+      results1.push("Fizz");
+    } else {
+      results1.push(i);
+    }
+  }
+};
+
+// 15
+
+const Obj = {
+  name: "Mirziyobek",
+  lastName: "Murodilov",
+  age: 16,
+  region: "Fergana",
+  isMerried: false,
+  job: "Programmer",
+  haqida: function () {
+    return `
+      Assalomu Alaykum, Mening ismim ${this.name}, Familyam ${
+      this.lastName
+    }. Yoshim ${this.age}da. ${this.region}da yashayaman. ${
+      this.job
+    } bo'lib faoliyat olib boraman. ${
+      this.isMerried ? "Uylanganman" : "Hali uylganmaganman"
+    }
+    `;
+  },
+};

@@ -79,4 +79,61 @@ if (belgilar.length > meyor) {
   );
 }
 
+// Amalyot 3
 
+// 1
+
+const myArray = [[false, true], [1, 2], 99, "yaxshi"];
+
+for (let i = 0; i < myArray.length; i++) {
+  if (typeof myArray[i] == "string") {
+    console.log("String index:", i);
+  }
+}
+
+// 2
+
+const data = [[1, 2, 3], "qizil", [4, 5, 6], true, false];
+
+data.forEach((item) => {
+  const res = Array.isArray(item);
+  if (res) {
+    item.forEach((num) => {
+      newData.push(num);
+    });
+  }
+});
+
+// 3
+
+const checkData = [null, "false", 0, 99, false, undefined, "", NaN, "0"];
+const falsey = [];
+
+checkData.forEach((item) => {
+  if (!item) {
+    falsey.push(item);
+  }
+});
+
+// 4
+
+const word = "fargona";
+const splitWord = word.split("").reverse();
+let newWord = "";
+
+for (let i = 0; i < splitWord.length; i++) {
+  newWord += splitWord[i];
+}
+
+// 5
+
+const words = "AsSSalomu AlAYkum YaxSimisizlar";
+const splitWords = words.split(" ");
+let newWords = "";
+
+splitWords.forEach((item) => {
+  const boshi = item.charAt().toLocaleLowerCase();
+  const davomi = item.slice(1).toUpperCase();
+
+  newWords += " " + boshi + davomi;
+});
